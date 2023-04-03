@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F5F5;
+}
+#close {
+    float: right;
+    font-size: 15px;
+    color: black;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 5px;
+}
+.container {
+    margin: 100px auto;
+    width: 1000px;
+    height: 650px;
+}
+#modal {
+    position: absolute;
+    top: 80px;
+    left: 550px;
+    z-index: 999;
+    border: 0.5px solid gray;
+    border-radius: 15px;
+    width: 500px;
+    height: 170px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    display: none;
+    animation: 2s drop;
+    transition: 2s;
+}
+#addTodo {
+    width: 95%;
+    padding: 10px;
+    height: 35px;
+    border: 0.5px solid gray;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #43A047;
+    
+}
+#modalName {
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 95%;
+    height: 30px;
+    padding: 2px;
+    padding-left: 0.5rem;
+}
+#modalHead {
+    width: 98%;
+    padding: 10px 5px 5px 5px;
+    height: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #CECECE;
+}
+.section {
+    float: left;
+    margin: 0;
+    width: 248px;
+    height: 650px;
+}
+#plus {
+    cursor: pointer;
+    width: 87.5%;
+    height: 35px;
+    padding: 4px;
+    border: none;
+    background-color: #9E9E9E;
+    text-align: Center;
+    margin: 4px auto;
+    font-size: 18px;
+    font-weight: 410;
+    /* border: 0.5px outset gray; */
+}
+.remove {
+    float: right;
+    font-size: 17px;
+    color: #CECECE;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.todo {
+    width: 85%;
+    height: 28px;
+    /* padding: 2.5px; */
+    border: none;
+    background-color: white;
+    text-align: Center;
+    margin: 8px auto;
+    margin-top: 10px;
+    vertical-align: middle;
+    font-size: 17px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    /* overflow: auto; */
+}
+.header {
+    background-color: #424242;
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+#noStatus,
+#inProgress {
+    background-color: #CECECE;
+}
+
+#noStart,
+#completed {
+    background-color: #E5E5E5;
+}
+.body {
+    padding: 5px;
+    width: 96%;
+    height: 93%;
+    text-align: Center;
+}
+
+@keyframes drop {
+    0% {
+        top: -500px;
+    }
+
+    100% {
+        top: 80px;
+    }
+}
+.remove:hover {
+    color: black;
+}
+.todo:hover {
+    transform: scale(1.005) translateX(1px) translateY(-3px);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/5d397587b1.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./Media/icons8-todo-list-30.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+</head>
+
+<body>
+    <div id="modal">
+        <div id="modalHead">Add Todo
+            <i id="close" class="fa fa-x"></i>
+        </div>
+        <input type="text" id="modalName">
+        <button id="addTodo">Add Todo</button>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="header">No Status</div>
+            <div class="body" id='noStatus'>
+                <button id="plus">+ Add Todo</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="header">Not Started</div>
+            <div class="body" id='noStart'></div>
+        </div>
+
+        <div class="section">
+            <div class="header">In Progress</div>
+            <div class="body" id='inProgress'></div>
+        </div>
+        <div class="section">
+            <div class="header">Completed</div>
+            <div class="body" id='completed'></div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
